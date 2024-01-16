@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Training</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+      body {
+          background-color: black;
+          margin: 0;
+          padding: 0;
+      }
+      .carousel-inner {
+    position: relative;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    left: 0;
+    text-align: left; /* Align text to the left */
+    width: 50%; /* Set the width based on your preference */
+    padding: 20px; /* Add padding for better visibility */
+    top: 80%; /* Adjust the position from the top */
+    transform: translateY(-50%);
+    color: black;
+    font-size: 100px;
+    
+  }
+  h3 {
+    text-align: center left;
+  
+  }
+
+      .navbar {
+          background-color: #28a745;
+          animation: fadeInDown 10s ease;
+      }
+
+      @keyframes fadeInDown {
+          from {
+              opacity: 0;
+              transform: translateY(-50px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      h1 {
+          margin-top: auto;
+          margin-bottom: auto;
+          padding: auto;
+      }
+
+      img {
+          width: 50px;
+          animation: fadeInUp 2s ease; /* Add animation to all images */
+      }
+
+      @keyframes fadeInUp {
+          from {
+              opacity: 0;
+              transform: translateY(50px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      /* Rest of your existing styles */
+      /* ... */
+
+    
+  </style>
+</head>
+<body>
+    <!-- Navbar start  -->
+    <div class="p-5 bg-success text-white text-center py-1">
+        <h1 style="font-size: 100px; color: cadetblue;">Delight Internal Team</h1>
+        <h2 style="color: cadetblue;">Internal Team List</h2>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse py-1" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Your navbar links go here -->
+                    <!-- ... -->
+
+                    <!-- Example link -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.w3schools.com/" style="color: aqua; hover{color:red;}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.w3schools.com/bootstrap5/index.php" style="color: aqua;">About</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown btn-bc-danger">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false" style="color: aqua;">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" style="color: aqua; background-color: rgb(87, 71, 71);" href="#">3% Discount For Jan</a></li>
+                            <li><a class="dropdown-item" style="color: aqua;background-color: rgb(80, 68, 68);" href="#">5% Discount For Feb</a></li>
+                           
+                            <li><a class="dropdown-item" style="color: aqua;background-color: rgb(94, 83, 83);" href="https://getbootstrap.com/">Bootstrap</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown btn-bc-danger">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false" style="color: aqua;">
+                            Logo Design
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" style="color: aqua;background-color: rgb(59, 55, 49);" href="#">HTML Desgin</a></li>
+                            <li><a class="dropdown-item" style="color: aqua;background-color: rgb(65, 59, 53);" href="#">CSS Desgin</a></li>
+                           
+                            <li><a class="dropdown-item" style="color: aqua;background-color: rgb(77, 71, 63);" href="#">Developer Desgin</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown btn-bc-danger">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                         aria-expanded="false" style="color: aqua;">
+                         About Us
+                      </a>
+                      <ul class="dropdown-menu ">
+                          <li><a class="dropdown-item" style="color: aqua;background-color: rgb(59, 55, 49);" href="#"></a></li>
+                          <li><a class="dropdown-item" style="color: aqua;background-color: rgb(65, 59, 53);" href="#">Sir! Wai Ling KyawSir! Aung Myo Khaing</a></li>
+                         
+                          <li><a class="dropdown-item" style="color: aqua;background-color: rgb(77, 71, 63);" href="#">Long Long Ago, Sai Myint Lwin</a></li>
+                          <li><a class="dropdown-item" style="color: aqua;background-color: rgb(77, 71, 63);" href="#">May Myat Hmue,Aung Ye Htet </a></li>
+                        </ul>
+                  </li>
+
+            </div>
+        </div>
+    </nav>
+<!-- navbar end -->
+
+<!-- carsoul start -->
+
+  
+ 
+  
+<!-- carsoul end -->
+
+<!-- btn start -->
+
+<!-- btn end -->
+
+
+  
+  
+  
+<br>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mx-auto">
+  <div class="col">
+    <div class="card w-75   mx-auto">
+      <img src="assets/img/5.logo.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center; color: gold; font-size: 30px;">Sir! Aung Myo Khaing </h5>
+        <p class="card-text" style="color: chartreuse;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card w-75   mx-auto">
+      <img src="assets/img/6.logo.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center; color: gold; font-size: 30px;">Sir! Wai Linn Kyaw</h5>
+        <p class="card-text" style="color: chartreuse;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4"> <!-- Added mb-4 class for margin-bottom -->
+      <div class="card w-75 mx-auto">
+          <img src="assets/img/1.logo.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title" style="text-align: center; color: rgb(15, 134, 182); font-size: 30px;">Long Long Ago</h5>
+              <p class="card-text"  style="color: rgb(86, 7, 97);">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col mb-4"> <!-- Added mb-4 class for margin-bottom -->
+      <div class="card w-75 mx-auto">
+          <img src="assets/img/3.logo.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title" style="text-align: center; color: rgb(15, 134, 182); font-size: 30px;">Sai Myint Lwin</h5>
+              <p class="card-text" style="color: rgb(86, 7, 97);">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+      <div class="card w-75 mx-auto">
+          <img src="assets/img/4.logo.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title" style="text-align: center; color: rgb(15, 134, 182); font-size: 30px;">May Myat Hmue</h5>
+              <p class="card-text"   style="color: rgb(86, 7, 97);">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+      <div class="card w-75 mx-auto">
+          <img src="assets/img/2.logo.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title" style="text-align: center;color: rgb(15, 134, 182); font-size: 30px;">Aung Ye Htet</h5>
+              <p class="card-text"  style="color: rgb(86, 7, 97);">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          
+      </div>
+     <br>
+      <button type="button" class="btn btn-outline-primary" style="margin-left: 295px; padding: 20px;">Leave Delight Internal Team</button>
+  <button type="button" class="btn btn-outline-primary" style="padding: 20px;">Add Delight Internal Team</button>
+    </div>
+</div>
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/pooper.min.js"></script>
+</body>
+</html>
+

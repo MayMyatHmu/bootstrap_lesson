@@ -1,0 +1,14 @@
+#main{
+    width: 414px;
+    min-height: 100vh;
+    background-color: #0A0955;
+  }
+  @media (max-width: 414px) {
+    #main{
+      width: 100%;
+    }
+  }
+  .card2 {
+    margin-left: 100%;
+  }
+
